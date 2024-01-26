@@ -17,3 +17,28 @@ body {
   color: whitesmoke;
   text-decoration: none;
 }
+
+.container {
+  padding: 20px;
+}
+
+.container h2 {
+  font-size: xx-large;
+}
+
+.container form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.container form div input {
+  width: 300px;
+  font-size: x-large;
+}
+
+.container form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: medium;
+}
