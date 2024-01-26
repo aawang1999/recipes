@@ -1,9 +1,11 @@
 import { useState } from "react"
 import axios from 'axios'
 import { useGetUserId } from "../hooks/useGetUserId"
+import { useNavigate } from "react-router-dom"
 
 export const CreateRecipe = () => {
   const userId = useGetUserId()
+  const navigate = useNavigate()
   const [recipe, setRecipe] = useState({
     name: "",
     ingredients: [],
@@ -34,6 +36,7 @@ export const CreateRecipe = () => {
     try {
       await axios.post("http://localhost:5500/recipes", recipe)
       alert('Recipe created.')
+      navigate('/')
     } catch (err) {
       console.error(err)
     }

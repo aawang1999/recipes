@@ -14,9 +14,9 @@ router.get('/', async (req, res) => {
   }
 })
 
-router.get('/savedRecipes/ids', async (req, res) => {
+router.get('/savedRecipes/ids/:userId', async (req, res) => {
   try {
-    const user = await UserModel.findById(req.body.userId)
+    const user = await UserModel.findById(req.params.userId)
     res.status(200).json({ savedRecipes: user?.savedRecipes })
   } catch (err) {
     res.status(400).json({ message: err })

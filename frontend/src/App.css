@@ -69,3 +69,14 @@ body {
   font-size: medium;
   width: 50px;
 }
+
+.recipes-list li {
+  width: 500px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.recipes-list li img {
+  width: 300px;
+}
