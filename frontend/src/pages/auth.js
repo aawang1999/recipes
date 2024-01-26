@@ -97,7 +97,7 @@ const Form = ({ username, setUsername, password, setPassword, label, onSubmit })
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">{label}</button>
+        <button className="submit-button" type="submit">{label}</button>
       </form>
     </div>
   )

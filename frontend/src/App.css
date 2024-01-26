@@ -32,18 +32,40 @@ body {
   margin-top: 20px;
 }
 
-.container form div input {
+.container form div input, 
+.create-recipe-form input,
+.create-recipe-form textarea {
   width: 300px;
   font-size: x-large;
 }
 
-.container form button {
+.container form .submit-button,
+.create-recipe-form .submit-button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: medium;
+  width: 100px;
+}
+
+.create-recipe-form label {
+  margin-top: 20px;
 }
 
 .logout {
   font-size: medium;
   margin-left: 20px;
+}
+
+.create-recipe-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-recipe-title {
+  margin-bottom: 0px;
+}
+
+.add-button {
+  font-size: medium;
+  width: 50px;
 }
