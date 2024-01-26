@@ -42,3 +42,8 @@ body {
   padding: 10px 20px;
   font-size: medium;
 }
+
+.logout {
+  font-size: medium;
+  margin-left: 20px;
+}
